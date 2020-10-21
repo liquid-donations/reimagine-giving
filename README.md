@@ -12,3 +12,4 @@ When it comes to ~money~ donations, liquid is good
 
 - [meeting notes doc](https://docs.google.com/document/d/1mTI5A3ttNo5Asf1wh9bt65ROMw-ojpUouIIAnmSPJNA/edit?usp=sharing)
 - [project board](https://github.com/liquid-philanthropy/reimagine-giving/projects/1)
+- [challenge docs](/docs)
