@@ -1,11 +1,12 @@
 ---
-name: Project task
-about: 
+name: Task
+about: Task
 title: ''
-labels: 'task'
+labels: ''
 assignees: ''
 
 ---
+
 
 ## Deliverable
 *what is end-result of this task*
