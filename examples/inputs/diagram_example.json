@@ -1,0 +1,25 @@
+{
+  "Kat": {
+    "Charity A": 100
+  },
+  "Aaron": {
+    "Charity A": 50,
+    "Kat": 50
+  },
+  "Nikola": {
+    "Aaron": 50,
+    "Gera": 50
+  },
+  "Gera": {
+    "Claire": 50,
+    "Sean": 50
+  },
+  "Claire": {
+    "Charity A": 50,
+    "Charity B": 50
+  },
+  "Sean": {
+    "Charity C": 50,
+    "Claire": 50
+  }
+}

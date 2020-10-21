@@ -1,0 +1,30 @@
+{
+  "Aaron": {
+    "Charity A": 40,
+    "Charity B": 40,
+    "Sean": 9,
+    "Nikola": 9,
+    "Dummy A": 2
+  },
+  "Sean": {
+    "Charity A": 80,
+    "Charity B": 0,
+    "Aaron": 10,
+    "Nikola": 10
+  },
+  "Nikola": {
+    "Charity A": 0,
+    "Charity B": 80,
+    "Aaron": 10,
+    "Sean": 10
+  },
+  "Dummy A": {
+    "Dummy B": 100
+  },
+  "Dummy B": {
+    "Dummy C": 100
+  },
+  "Dummy C": {
+    "Dummy A": 100
+  }
+}
