@@ -2,7 +2,7 @@
 
 *Evidence-based insight* [2]
 
-*Evidence-based insight* [^3]
+*Evidence-based insight* [3]
 
 
 [1]: 2018, [Ideas 42 Best of intentions](http://www.ideas42.org/wp-content/uploads/2018/08/ideas42-Best-of-Intentions_Charitable-Giving-1.pdf)
