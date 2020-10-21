@@ -4,9 +4,9 @@ This repo tracks work on the [Open Ideo Reimagine Chartible Giving Challenge](ht
 
 ## Project Overview 
 
-Liquid Change simplifies donors' choices by applying the principles of [Liquid Democracy](https://wiki.p2pfoundation.net/Liquid_Democracy) and social networking to a charitable donation-management platform. 
+Liquid _____________ simplifies donors' choices by applying the principles of [Liquid Democracy](https://wiki.p2pfoundation.net/Liquid_Democracy) and social networking to a charitable donation-management platform. 
 
-When it comes to ~money~ change, liquid is good
+When it comes to ~money~ _______, *liquid is good*
 
 ## Where things are
 
