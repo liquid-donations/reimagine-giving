@@ -1,0 +1,18 @@
+@import '../styles.scss';
+
+:host {
+    .img-placeholder {
+        width: 100%;
+        height: 300px;
+        background: $app-colour-mid;
+        border-radius: $border-radius;
+        @include box-shadow;
+    }
+    .app-container {
+        max-width: 700px;
+        min-width: 500px;
+        & * {
+            margin-bottom: 10px;
+        }
+    }
+}

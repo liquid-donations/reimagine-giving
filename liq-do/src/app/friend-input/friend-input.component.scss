@@ -1,0 +1,27 @@
+@import '../../styles.scss';
+
+:host {
+    display: flex;
+    flex-direction: row;
+    background: $app-colour-dark;
+    padding: 15px;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    color: $app-colour-mid;
+    justify-content: space-between;
+    align-items: center;
+    @include box-shadow;
+    span {
+        margin-right: 15px;
+        color: $app-colour-mid;
+    }
+    input {
+        padding: 10px;
+        background: $app-colour-light;
+        border: none;
+        border-radius: $border-radius;
+        color: $app-colour-dark;
+        font-size: medium;
+    }
+}

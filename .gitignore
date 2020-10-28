@@ -1,0 +1,46 @@
+# See http://help.github.com/ignore-files/ for more about ignoring files.
+
+# compiled output
+/liq-do/dist
+/liq-do/tmp
+/liq-do/out-tsc
+# Only exists if Bazel was run
+/liq-do/bazel-out
+
+# dependencies
+/liq-do/node_modules
+
+# profiling files
+/liq-do/hrome-profiler-events*.json
+/liq-do/peed-measure-plugin*.json
+
+# IDEs and editors
+/liq-do/.idea
+/liq-do/project
+/liq-do/classpath
+/liq-do/c9/
+/liq-do/.launch
+/liq-do/settings/
+/liq-do/.sublime-workspace
+
+# IDE - VSCode
+/liq-do/vscode/*
+/liq-do/.vscode/settings.json
+/liq-do/.vscode/tasks.json
+/liq-do/.vscode/launch.json
+/liq-do/.vscode/extensions.json
+/liq-do/history/*
+
+# misc
+/liq-do/.sass-cache
+/liq-do/connect.lock
+/liq-do/coverage
+/liq-do/libpeerconnection.log
+/liq-do/pm-debug.log
+/liq-do/arn-error.log
+/liq-do/estem.log
+/liq-do/typings
+
+# System Files
+/liq-do/DS_Store
+/liq-do/humbs.db
