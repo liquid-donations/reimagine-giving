@@ -1,14 +1,27 @@
 LiquidDonations Python Library
 ---
 ```bash
-$ liquid_donations --help
-Usage: liquid_donations [OPTIONS] FILENAME
+Usage: liquid_donations [OPTIONS] COMMAND [ARGS]...
+
+  Command line tools for Liquid Donations.
 
 Options:
   --help  Show this message and exit.
+
+Commands:
+  calculate  Calculate the Absorbing Markov Chain.
+  graph      Render a picture of the graph.
 ```
+
+
+Simple Example
 ```bash
-$ liquid_donations ./inputs/test.json
+$ liquid_donations graph ./inputs/simple_example.json
+```
+![bigger example](../diagrams/simple_example.png?raw=true)
+
+```bash
+$ liquid_donations calculate ./inputs/simple_example.json
 
            Aaron  Nikola  Sean  Charity A  Charity B
 Aaron        0.0     0.1   0.1        0.4        0.4
@@ -23,9 +36,8 @@ Nikola   0.136364   0.863636
 Sean     0.863636   0.136364
 ```
 
-Small Example
 ```bash
-$ cat ./inputs/test.json
+$ cat ./inputs/simple_example.json
 {
   "Aaron": {
     "Charity A": 40,
@@ -50,6 +62,36 @@ $ cat ./inputs/test.json
 
 
 Bigger Example
+```bash
+$ liquid_donations graph ./inputs/bigger_example.json
+```
+![bigger example](../diagrams/bigger_example.png?raw=true)
+
+```bash
+$ liquid_donations calculate ./inputs/bigger_example.json
+
+           Aaron  Anders  Claire  Kat  Nikola  Sean  Charity A  Charity B  Charity C  Charity D  Charity E
+Aaron        0.0     0.2     0.2  0.2     0.2   0.2        0.0        0.0        0.0        0.0        0.0
+Anders       0.0     0.0     0.0  0.0     0.0   0.0        0.2        0.2        0.2        0.2        0.2
+Claire       0.0     0.5     0.0  0.0     0.5   0.0        0.0        0.0        0.0        0.0        0.0
+Kat          0.0     0.0     0.0  0.0     0.0   0.1        0.0        0.0        0.0        0.0        0.9
+Nikola       0.0     0.0     0.3  0.3     0.0   0.0        0.0        0.0        0.3        0.1        0.0
+Sean         0.1     0.0     0.0  0.0     0.1   0.0        0.8        0.0        0.0        0.0        0.0
+Charity A    0.0     0.0     0.0  0.0     0.0   0.0        1.0        0.0        0.0        0.0        0.0
+Charity B    0.0     0.0     0.0  0.0     0.0   0.0        0.0        1.0        0.0        0.0        0.0
+Charity C    0.0     0.0     0.0  0.0     0.0   0.0        0.0        0.0        1.0        0.0        0.0
+Charity D    0.0     0.0     0.0  0.0     0.0   0.0        0.0        0.0        0.0        1.0        0.0
+Charity E    0.0     0.0     0.0  0.0     0.0   0.0        0.0        0.0        0.0        0.0        1.0
+
+        Charity A  Charity B  Charity C  Charity D  Charity E
+Aaron    0.262606   0.073096   0.189848   0.112014   0.362437
+Anders   0.200000   0.200000   0.200000   0.200000   0.200000
+Claire   0.132342   0.117839   0.295141   0.176940   0.277737
+Kat      0.083273   0.001088   0.005801   0.002659   0.907179
+Nikola   0.064685   0.035678   0.390283   0.153880   0.355475
+Sean     0.832729   0.010877   0.058013   0.026589   0.071791
+```
+
 ```bash
 $ cat ./inputs/bigger_example.json
 {
@@ -88,28 +130,4 @@ $ cat ./inputs/bigger_example.json
       "Charity E": 20
   }
 }
-```
-```bash
-$ liquid_donations ./inputs/bigger_example.json
-
-           Aaron  Anders  Claire  Kat  Nikola  Sean  Charity A  Charity B  Charity C  Charity D  Charity E
-Aaron        0.0     0.2     0.2  0.2     0.2   0.2        0.0        0.0        0.0        0.0        0.0
-Anders       0.0     0.0     0.0  0.0     0.0   0.0        0.2        0.2        0.2        0.2        0.2
-Claire       0.0     0.5     0.0  0.0     0.5   0.0        0.0        0.0        0.0        0.0        0.0
-Kat          0.0     0.0     0.0  0.0     0.0   0.1        0.0        0.0        0.0        0.0        0.9
-Nikola       0.0     0.0     0.3  0.3     0.0   0.0        0.0        0.0        0.3        0.1        0.0
-Sean         0.1     0.0     0.0  0.0     0.1   0.0        0.8        0.0        0.0        0.0        0.0
-Charity A    0.0     0.0     0.0  0.0     0.0   0.0        1.0        0.0        0.0        0.0        0.0
-Charity B    0.0     0.0     0.0  0.0     0.0   0.0        0.0        1.0        0.0        0.0        0.0
-Charity C    0.0     0.0     0.0  0.0     0.0   0.0        0.0        0.0        1.0        0.0        0.0
-Charity D    0.0     0.0     0.0  0.0     0.0   0.0        0.0        0.0        0.0        1.0        0.0
-Charity E    0.0     0.0     0.0  0.0     0.0   0.0        0.0        0.0        0.0        0.0        1.0
-
-        Charity A  Charity B  Charity C  Charity D  Charity E
-Aaron    0.262606   0.073096   0.189848   0.112014   0.362437
-Anders   0.200000   0.200000   0.200000   0.200000   0.200000
-Claire   0.132342   0.117839   0.295141   0.176940   0.277737
-Kat      0.083273   0.001088   0.005801   0.002659   0.907179
-Nikola   0.064685   0.035678   0.390283   0.153880   0.355475
-Sean     0.832729   0.010877   0.058013   0.026589   0.071791
 ```
