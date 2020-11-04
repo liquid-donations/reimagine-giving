@@ -11,10 +11,8 @@ def cli(filename):
     matrix = amc.generate_matrix(data)
     sorted_matrix = amc.sort_matrix(matrix)
     steady_state = amc.get_steady_state(matrix)
-    click.echo()
-    click.echo(sorted_matrix)
-    click.echo()
-    click.echo(steady_state)
+    amc.print_matrix(sorted_matrix)
+    amc.print_matrix(steady_state)
 
 
 if __name__ == '__main__':

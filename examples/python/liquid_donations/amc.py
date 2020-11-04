@@ -2,12 +2,18 @@ import numpy as np
 import pandas as pd
 
 
+def print_matrix(matrix):
+    pd.set_option('display.max_rows', len(matrix))
+    print()
+    print(matrix)
+
+
 def normalize(matrix):
     return matrix.div(matrix.sum(axis=1), axis=0)
 
 
 def generate_matrix(data):
-    key_set = set()
+    key_set = set(data.keys())
     for edges in data.values():
         keys = edges.keys()
         key_set.update(keys)
